@@ -1,0 +1,52 @@
+
+#include <iostream>
+#include <cmath>
+#include <string>
+
+using namespace std;
+
+enum enScreencolor { Red=1, Blue=2, Green=3, Yellow=4 };
+
+int main()
+{
+    cout << "***********************************\n";
+    cout << "Please choose the number of color ?\n";
+    cout << "(1) Red \n";
+    cout << "(2) Blue \n";
+    cout << "(3) Green \n";
+    cout << "(4) Yellow\n";
+    cout << "***********************************\n";
+    cout << "Your choise? ";
+
+    short c;
+    enScreencolor color;
+    cin >> c;
+    color = (enScreencolor)c;
+
+    if (color == enScreencolor::Red)
+    {
+        system("color 4F");
+    }
+    else if (color == enScreencolor::Blue)
+    {
+        system("color 1F");
+    }
+    else if (color == enScreencolor::Green)
+    {
+        system("color 2F");
+    }
+    else if (color == enScreencolor::Yellow)
+    {
+        system("color 6F");
+    }
+
+
+    else
+    {
+        system("color 3D");
+    }
+
+
+    return 0;
+}
+
