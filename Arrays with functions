@@ -1,0 +1,41 @@
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+void Readgrades(float Grades[3])
+{
+	cout << "Please enter grade 1 ?\n";
+	cin >> Grades[0];
+
+	cout << "Please enter grade 2 ?\n";
+	cin >> Grades[1];
+
+	cout << "Please enter grade 3 ?\n";
+	cin >> Grades[2];
+}
+
+float Avarage(float Grades [3])
+{
+	return (Grades[0] + Grades[1] + Grades[2]) / 3;
+}
+
+
+void PrintAvarage(float Grades[3])
+{
+
+	cout << "*************\n";
+	cout << "Avarage = " << Avarage(Grades) << endl;
+}
+
+
+int main()
+{
+	float Grades[3];
+	Readgrades(Grades);
+	float Avarage();
+	PrintAvarage(Grades);
+
+	return 0;
+}
+
