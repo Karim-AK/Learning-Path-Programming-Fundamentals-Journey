@@ -76,7 +76,7 @@ string GetWeekDayName(enWeekDays WeekDays)
 
     default:
 
-        cout << "Not a week day! please try again" << endl;
+        return "Not a week day! please try again";
 
     }
 
