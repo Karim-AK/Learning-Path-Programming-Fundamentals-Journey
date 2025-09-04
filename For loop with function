@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+
+
+double ReadN()
+{
+	double result = 1;
+	int N;
+	cout << "Please enter a number?\n";
+	cin >> N;
+	int P;
+	cout << "Please enter power for the number\n";
+	cin >> P;
+	for (double i = 1; i <= P; i++)
+	{
+		result *= N;
+	}
+	cout << N << "^" << P <<" = " << result;
+	return 0;
+}
+int main()
+{
+	ReadN();
+	return 0;
+
+}
