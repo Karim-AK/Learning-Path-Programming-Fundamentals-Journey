@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+
+void PrintLine()
+{
+	cout << "Please enter a positive number: \n";
+}
+void NotPositiveNumberCase(int& N)
+{
+	while (N <= 0)
+	{
+		cout << "\n Please enter a positive number? \n";
+		cin >> N;
+	}
+}
+int CalculateFactorialOfN(int N)
+{
+	int Fact = 1;
+	int i = N;
+
+	while (i >= 1)
+	{
+		
+		Fact *= i;
+		i--;
+	}
+
+	return Fact;
+}
+int main()
+{
+	PrintLine();
+	int N;
+	cin >>N;
+	NotPositiveNumberCase(N);
+	cout << "Factorial for your number = " << CalculateFactorialOfN(N) << endl;
+	
+	return 0;
+
+}
